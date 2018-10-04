@@ -177,6 +177,7 @@ recommended_posts:
   externalLinks: 2 # 外部文章数量
   fixedNumber: false
 
+livere_uid: MTAyMC80MDExNC8xNjY0MQ==
 
 # Search 确保_config中只有一个search，否则会冲突。
 search:
