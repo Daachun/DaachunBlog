@@ -39,7 +39,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace:
@@ -86,17 +86,17 @@ deploy:
 # 导航栏
 nav_menu:
   - name: 主页
-    slug: about
+    slug: home
     icon: fa-home
     url: /
   - name: 项目
     slug: projects
     icon: fa-cube
-    url: https://daachun.github.io/proj
-  - name: 博客
-    slug: home
+    url: /proj
+  - name: 关于
+    slug: about
     icon: fa-rss
-    url: /
+    url: /about
   - name: 归档
     slug: archives
     icon: fa-archive
@@ -107,7 +107,7 @@ widgets:
   # 博主信息，显示个人头像、格言、社交信息等
   author:
     enable: true
-    avatar: https://xaoxuu.com/assets/img/avatar.jpg # 头像，如果config中已经设置avatar了，这里可以不用写
+    avatar: /img/Daachun.png # 头像，如果config中已经设置avatar了，这里可以不用写
     title: Daachun # 博客名、头衔等等，居中显示
     motto: 不想当策划的美术不是好程序 # 格言座右铭等等
     social: true # 是否显示社交信息（内容同页脚的社交信息）
@@ -201,3 +201,22 @@ search:
 less:
   compress: true
 # >> 主题配置 ---------------------------------------------------------------------
+
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'duotone-light'
+  line_number: true    # default false
+  custom_css:  # optional
+
+
+# Extensions
+plugins:
+    hexo-generator-feed
+    hexo-prism-plugin
+#Feed Atom
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+
+favicon: /img/bitbug_favicon.ico
